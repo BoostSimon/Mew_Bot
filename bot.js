@@ -13,7 +13,7 @@ client.on('message', message => {
     	message.reply('Hi');
   	}
     if (message.content === prefix + '.Commands') {
-        message.reply("'Commands list'");
+        message.reply("Commands list");
     }
 });
 
