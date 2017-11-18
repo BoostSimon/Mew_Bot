@@ -6,10 +6,10 @@ client.on('ready', () => {
 });
 var prefix = "m"
 client.on('message', message => {
-    if (message.content === preifx + '.ping') {
+    if (message.content === prefix + '.ping') {
     	message.reply('pong');
   	}
-    if (message.content === preifx + '.Hello') {
+    if (message.content === prefix + '.Hello') {
     	message.reply('Hi');
   	}
 });
