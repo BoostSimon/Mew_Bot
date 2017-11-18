@@ -15,6 +15,9 @@ client.on('message', message => {
     if (message.content === prefix + '.Commands') {
         message.reply("Commands list");
     }
+    if (message.content === prefix + ".TellMeAJoke") {
+       message.reply("Robox is a good game");   
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
