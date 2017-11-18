@@ -13,9 +13,9 @@ client.on('message', message => {
     	message.reply('Hi');
   	}
     if (message.content === prefix + '.Commands') {
-        message.reply("Commands list");
-        message.reply("m.Hello - say hello to the bot");
-        message.reply("m.TellMeAJoke - telling you a joke");
+        message.channel.sendMessage("Commands list");
+        message.channel.sendMessage("m.Hello - say hello to the bot");
+        message.channel.sendMessage("m.TellMeAJoke - telling you a joke");
     }
     if (message.content === prefix + ".TellMeAJoke") {
        message.reply("Robox is a good game");   
