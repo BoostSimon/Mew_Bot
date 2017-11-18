@@ -12,6 +12,9 @@ client.on('message', message => {
     if (message.content === prefix + '.Hello') {
     	message.reply('Hi');
   	}
+    if (message.content === prefix + '.Commands') {
+        message.reply(''Commands list'');
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
