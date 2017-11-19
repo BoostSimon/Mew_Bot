@@ -5,10 +5,8 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 var prefix = "m"
+var number;
 client.on('message', message => {
-    if (message.content === prefix + '.ping') {
-    	message.reply('pong');
-  	}
     if (message.content === prefix + '.Hello') {
     	message.reply('Hi');
   	}
@@ -19,6 +17,22 @@ client.on('message', message => {
     }
     if (message.content === prefix + ".TellMeAJoke") {
        message.reply("Robox is a good game");   
+    }
+    if (message.content === prefix + ".Memes") {
+     message.channel.sendMessage("Here is a meme for you"); 
+     number = math.floor(math.random() * 4) +1;
+        if (number == 1) {
+         number = 0;
+         message.channel.sendMessage("https://imgur.com/a/IPG0r"); 
+        }
+        if (number == 2) {
+          number = 0;
+          message.channel.sendMessage("https://media.discordapp.net/attachments/265381707312660480/366217251424174080/unknown.png");
+        }
+        if (number == 3) {
+         number = 0;
+         message.channel.sendMessage("https://cdn.discordapp.com/attachments/374255440055500800/374255583647236099/marin_tho.jpg");
+        }
     }
 });
 
