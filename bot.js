@@ -20,7 +20,10 @@ client.on('message', message => {
     }
     if (message.content === prefix + ".Memes") {
      message.channel.sendMessage("Here is a meme for you"); 
-     number = math.floor(math.random() * 4) +1;
+     number = math.floor(math.random() * 4);
+        if (number === 0) {
+         number = 1;   
+        }
         if (number === 1) {
          message.channel.sendMessage("https://imgur.com/a/IPG0r"); 
         }
