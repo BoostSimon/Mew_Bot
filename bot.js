@@ -13,10 +13,10 @@ client.on('message', message => {
   	}
     if (message.content === prefix + '.Commands') {
         const embed = new Discord.RichEmbed()
-        .SetColor(0x954D23)
-        .SetTitle("Commands")
-        .AddField("m.Memes", "Make the bot give you a meme")
-        .AddField("m.TellMeAJoke", "Make the bot to tell you a joke")
+        .setColor(0x954D23)
+        .setTitle("Commands")
+        .addField("m.Memes", "Make the bot give you a meme")
+        .addField("m.TellMeAJoke", "Make the bot to tell you a joke")
         message.channel.send({embed})
     }
     if (message.content === prefix + ".TellMeAJoke") {
@@ -41,9 +41,7 @@ client.on('message', message => {
     }
     if (message.content == prefix + ".Say") {
      message.delete();
-     const embed = new Discord.RichEmbed()
-     .setDescription("" + message.author.username + " Says: " + args.join(" "))
-     message.channel.send({embed})
+     message.channel.sendMessage("Ha your message got Deleted!")
     }
     if (message.content == prefix + ".version") {
      message.channel.sendMessage("Current Version: " + Version);
