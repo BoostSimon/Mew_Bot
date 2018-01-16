@@ -36,7 +36,7 @@ client.on('message', message => {
         }
     }
     if (message.content == prefix + ".Say") {
-     message.channel.sendMessgae(message.content.substring(3));   
+     message.channel.sendMessgae(message.content.substring(5));   
     }
 });
 
