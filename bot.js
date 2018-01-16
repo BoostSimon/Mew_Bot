@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 var prefix = "m"
 var number;
-var Version = "1.3.1";
+var Version = "1.3.2";
 client.on('message', message => {
     if (message.content === prefix + '.Hello') {
     	message.reply('Hi');
