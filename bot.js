@@ -40,8 +40,8 @@ client.on('message', message => {
         }
     }
     if (message.content == prefix + ".Say") {
-     message.delete();
-     message.channel.sendMessage("Ha your message got Deleted!")
+     message.channel.delete();
+     message.channel.sendMessage(message.content);
     }
     if (message.content == prefix + ".version") {
      message.channel.sendMessage("Current Version: " + Version);
