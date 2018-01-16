@@ -35,6 +35,9 @@ client.on('message', message => {
          message.channel.sendMessage("https://cdn.discordapp.com/attachments/374255440055500800/374255583647236099/marin_tho.jpg");
         }
     }
+    if (message.content == prefix + ".Say") {
+     message.channel.sendMessgae(message.content.substring(3));   
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
