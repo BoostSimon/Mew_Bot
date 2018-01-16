@@ -39,7 +39,7 @@ client.on('message', message => {
     if (message.content == prefix + ".Say") {
      message.channel.sendMessgae(message.content.substring(5));   
     }
-    if (message.content == prefix + ".Version") {
+    if (message.content == prefix + ".version") {
      message.channel.sendMessage("Current Version: " + Version);
     }
 });
