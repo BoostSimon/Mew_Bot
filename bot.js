@@ -40,8 +40,9 @@ client.on('message', message => {
         }
     }
     if (message.content == prefix + ".Say") {
-     message.channel.delete();
-     message.channel.sendMessage(message.content);
+     var words = args.slice(1).join(" ");
+message.delete();
+message.channel.send(words)
     }
     if (message.content == prefix + ".version") {
      message.channel.sendMessage("Current Version: " + Version);
