@@ -6,6 +6,7 @@ client.on('ready', () => {
 });
 var prefix = "m"
 var number;
+var Version = 1.3;
 client.on('message', message => {
     if (message.content === prefix + '.Hello') {
     	message.reply('Hi');
@@ -37,6 +38,9 @@ client.on('message', message => {
     }
     if (message.content == prefix + ".Say") {
      message.channel.sendMessgae(message.content.substring(5));   
+    }
+    if (message.content == prefix + ".Version") {
+     message.channel.sendMessage(Version);
     }
 });
 
