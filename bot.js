@@ -48,8 +48,12 @@ message.delete();
 message.channel.send(words)
     }
     if (message.content == prefix + ".version") {
-     message.channel.sendMessage("Current Version: " + Version);
-        message.delete();
+     const embed = New Discord.RichEmbed()
+     .setColor(0x954D23)
+     .setTitles("Version")
+     .addField("Current Version", Version)
+     message.channel.send({embed})
+     message.delete();
     }
 });
 
