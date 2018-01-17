@@ -18,9 +18,11 @@ client.on('message', message => {
         .addField("m.Memes", "Make the bot give you a meme")
         .addField("m.TellMeAJoke", "Make the bot to tell you a joke")
         message.channel.send({embed})
+        message.delete();
     }
     if (message.content === prefix + ".TellMeAJoke") {
        message.reply("Robox is a good game");   
+       message.delete();
     }
     if (message.content === prefix + ".Memes") {
      message.channel.sendMessage("Here is a meme for you"); 
@@ -38,6 +40,7 @@ client.on('message', message => {
 
          message.channel.sendMessage("https://cdn.discordapp.com/attachments/374255440055500800/374255583647236099/marin_tho.jpg");
         }
+        message.delete();
     }
     if (message.content == prefix + ".Say") {
      var words = args.slice(1).join(" ");
@@ -46,6 +49,7 @@ message.channel.send(words)
     }
     if (message.content == prefix + ".version") {
      message.channel.sendMessage("Current Version: " + Version);
+        message.delete();
     }
 });
 
