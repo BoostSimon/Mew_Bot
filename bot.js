@@ -58,4 +58,4 @@ message.channel.send(words)
 });
 
 // THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+client.login("MzYyNjM0NTAwNzQ1ODU0OTg2.DUEKtA.y5Ow2dgeUDbV9qQV6HLa6SPGzNo");
